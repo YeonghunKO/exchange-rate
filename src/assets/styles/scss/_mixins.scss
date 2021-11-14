@@ -1,0 +1,24 @@
+@mixin displayFlex($dir, $justify, $align) {
+  display: flex;
+  @if $dir {
+    flex-direction: $dir;
+  }
+
+  justify-content: $justify;
+
+  @if $align {
+    align-items: $align;
+  }
+}
+
+@mixin setBackground($padding, $border, $background) {
+  @if $padding {
+    padding: $padding;
+  }
+  @if $border {
+    border: $border;
+  }
+  @if $background {
+    background: $background;
+  }
+}
